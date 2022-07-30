@@ -1,4 +1,3 @@
-//Importar o catalogo de filmes
 const catalogo = require('../database/catalogo.json')
 
 module.exports = (codigoBuscado) => {

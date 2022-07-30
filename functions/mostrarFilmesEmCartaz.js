@@ -1,10 +1,10 @@
+const mostrarFilmes = require('./mostrarFilmes')
 const mostrarFilmesEmCartaz = (filmes) => {
 
-    //1 filtrar os filmes em cartaz
-    filmes.filter()
+    filmes.filter((filme) => filme.emCartaz)
 
+    mostrarFilmes(filmes)
 
-    //2 mostrar os filmes filtrados
 }
 
 module.exports = mostrarFilmesEmCartaz

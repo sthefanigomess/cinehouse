@@ -1,11 +1,11 @@
+const salvarFilmes = require("./salvarFilmes") 
 const adicionarFilme = (filme) => {
-    // 1 Importar o catalogo 
+    
+    let filmes = require('../database/catalogo.json')
 
-    // 2 Adicionar o filme ao final do array do catalogo
+    filmes.push(filme)
 
-    // 3 salvar o catalogo de volta no arquivo 
-    //     chamar a funcao salvarFilmes(catalogo)
-
+    salvarFilmes(filmes)
 
 }
 
